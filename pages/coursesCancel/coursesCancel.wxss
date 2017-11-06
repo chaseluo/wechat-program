@@ -1,0 +1,40 @@
+.info{
+  display:flex;
+  flex-direction: row;
+  width:90%;
+  height:140rpx;
+  padding:50rpx 10rpx;
+  margin:50rpx auto;
+  float: center;
+}
+.form-info {
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color:#606060;
+  line-height: 50rpx;
+  padding:10rpx;
+  display: flex;
+}
+.form-info-name {
+  width: 158rpx;
+}
+.form-info-money {
+  font-weight: bold;    
+  text-align: center;
+}
+.form-info-button { 
+  float: center
+}
+.form-info-buttonView {
+  display: flex;
+  float: center;
+}
+.form-info-buttom {
+  height: 100rpx; 
+}
+.clear{
+  display: flex;
+  flex-direction: column;
+  height:16rpx;
+  background: #eeeeee;
+} 

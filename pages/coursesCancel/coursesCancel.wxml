@@ -1,0 +1,11 @@
+<view class="info">
+  <view class="form-info-money">
+      开课前24小时内取消报名
+      将扣除50%费用,是否确认
+      取消报名
+  </view>
+</view>
+<view class="form-info-buttonView">
+    <button class="form-info-button" size="mini" bindtap="">取消报名</button >   
+</view>
+<view class="form-info-buttom"></view>

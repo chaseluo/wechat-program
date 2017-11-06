@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/courses/courses",
+    "pages/attendCourses/attendCourses",
+    "pages/teacher/teacher",
+    "pages/me/index"
+  ],
+  "tabBar": {
+    "borderStyle": "#000",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/courses/courses",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+      },
+      {
+        "text": "个人信息",
+        "pagePath": "pages/me/index",
+        "iconPath": "images/store.png",
+        "selectedIconPath": "images/store-selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BDA469",
+    "navigationBarTitleText": "守护者",
+    "navigationBarTextStyle": "black"
+  }
+}

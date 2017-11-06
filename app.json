@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/courses/courses",
+    "pages/attendCourses/attendCourses",
+    "pages/teacher/teacher",
+    "pages/me/index",
+    "pages/coursesInfo/coursesInfo",
+    "pages/coursesCancel/coursesCancel",
+    "pages/coursesOrder/coursesOrder",
+    "pages/coursesFeedback/coursesFeedback",
+    "pages/coursesFeedbackInfo/coursesFeedbackInfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "守护者",
+    "navigationBarTextStyle":"black"
+  }
+}

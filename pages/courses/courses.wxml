@@ -1,0 +1,47 @@
+<view class="menu">
+  <scroll-view scroll-x="true" class="top-nav">
+    <view bindtap="swichNav" class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0">课程</view>
+    <view bindtap="swichNav" class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1">讲师</view>
+  </scroll-view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+<swiper-item>  
+<scroll-view scroll-y="true" class="content">
+    <view class="col3" bindtap="toAttendCourses">
+         <view class="col3-h" bindtap="toAttendCourses">
+            <text>参加课程</text>   
+        </view>
+    </view>
+    <view class="col3" bindtap="toOrderCourses">
+         <view class="col3-h">
+            <text>预约课程</text>
+        </view>
+    </view>
+    <view class="col3" bindtap="toCoursesFeedback">
+         <view class="col3-h">
+            <text>课程反馈</text>
+        </view>
+    </view>
+</scroll-view>
+</swiper-item>
+<swiper-item> 
+<scroll-view scroll-y="true" class="content">
+    <view class="col3" bindtap="toAttendCourses">
+         <view class="col3-h" bindtap="toAttendCourses">
+            <text>讲师认证</text>   
+        </view>
+    </view>
+    <view class="col3">
+         <view class="col3-h">
+            <text>课程讲师申请</text>
+        </view>
+    </view>
+    <view class="col3">
+         <view class="col3-h">
+            <text>讲师反馈</text>
+        </view>
+    </view>
+</scroll-view>
+</swiper-item>
+</swiper>     

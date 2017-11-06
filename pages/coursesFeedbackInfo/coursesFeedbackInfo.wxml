@@ -1,0 +1,72 @@
+<view class="content">
+  <view class="top">   
+      <view class="toin-name">北冰洋心肺复苏课程第一次免费分享</view>    
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title font-bold">课程介绍</view>
+    <view class="in-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Mauris sed ligula consectetur, consequat dolor in, sollicitudin tortor. 
+    Donec scelerisque nibh vitae sagittis laoreet.
+     Ut ultrices lectus ac fermentum condimentum. 
+     Donec ut eros porta ante finibus dignissim. 
+     Phasellus fermentum nibh orci, vitae hendrerit ex sollicitudin vitae. 
+     </view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+    <view class="in-title font-bold">培训地点</view>
+    <view class="in-info">深圳南山区科华路3号讯美广场1号楼23FA301会议室</view>
+  </view>
+  <view class="info">
+    <view class="in-title font-bold">培训时间</view>
+    <view class="in-info">2017/08/16 18:30-21:30</view>
+  </view>
+  <view class="info">
+    <view class="in-title font-bold">培训人数</view>
+    <view class="in-info">5/15人</view>
+  </view>
+  <view class="clear"></view>
+  <view class="info">
+      <view class="in-title font-bold">请如实填写以下信息:</view>
+      <view class="form-info">
+        <view class="form-info-name">姓名:</view>
+        <input placeholder="请输入姓名" type="text"/>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">联系电话:</view>
+        <input placeholder="请输入联系电话" type="text"/>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">证件类型:</view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{itemsID}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">证件号码:</view>
+        <input placeholder="请输入证件号码" type="text"/>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">电子邮箱:</view>
+        <input placeholder="请输入电子邮箱" type="text"/>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">绑定微信:</view>
+        <input placeholder="请输入绑定微信" type="text"/>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">通讯地址:</view>
+        <input placeholder="请输入通讯地址" type="text"/>
+      </view>
+     
+      <view class="form-info-money">本次培训费用：58元</view>
+      <view class="form-info-buttonView">
+         <view class="form-info-cancel" bindtap="coursesCancel">取消报名</view>
+        <button class="form-info-button" size="mini" bindtap="">确认报名</button >   
+      </view>
+      <view class="form-info-buttom"></view>
+  </view>
+</view>

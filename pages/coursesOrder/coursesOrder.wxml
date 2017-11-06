@@ -1,0 +1,59 @@
+<view class="content">
+  <view class="info"> 
+    <view class="clear"></view>
+      <view class="form-info">
+        <view class="form-info-name">请选择课程:</view>
+        <picker bindchange="bindCoursesChange" value="{{index}}" range="{{coursesArray}}">
+          <view class="picker">
+             {{coursesArray[index]}}
+          </view>
+        </picker>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">课程时长 :</view>
+        <view class="form-info-name">3小时</view>
+      </view>
+    <view class="clear"></view>
+      <view class="form-info">
+        <view class="form-info-name">预约时间:</view>
+        <picker mode="date" start="2018-08-21" end="2018-4-1" value="{{date}}" fields="day" bindchange="bindDateChange">
+            <view>{{date}}</view>
+        </picker>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">起止时间:</view>
+        <view class="form-info-name">09:00-12:00</view>
+      </view>
+    <view class="clear"></view>
+      <view class="form-info">
+        <view class="form-info-name">姓名</view>
+        <view class="form-info-name">唐小云</view>
+      </view>
+      <view class="form-info">
+        <view class="form-info-name">电话</view>
+         <view class="form-info-name">15986888868</view>
+      </view>
+     <view class="clear"></view>
+       <view class="form-info">
+        <view class="form-info-name">是否接受预约提醒:</view>
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{itemsID}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+      <view class="form-info-buttonView">
+        <button class="form-info-button" size="mini" bindtap="">取消预约</button >   
+      </view>
+      
+      <view class="wxtx">
+        <view class="wxtx-title">温馨提醒:</view>
+        <view class="wxtx-text">1.本课程具备大量实操训练，请穿着宽松舒适；</view>
+        <view class="wxtx-text">2.请勿空腹参加培训，饮食适量；</view>
+        <view class="wxtx-text">3.身体有不适请提前向讲师说明；</view>
+        <view class="wxtx-text">4.课程严肃紧凑，请勿在课堂上喧闹</view>
+        <view class="wxtx-text">5.请将您的手机及其他设备设置为震动或静音。</view>
+      </view>
+      <view class="form-info-buttom"></view>
+  </view>
+</view>
